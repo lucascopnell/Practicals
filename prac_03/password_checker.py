@@ -3,7 +3,11 @@ MIN_LENGTH = 4
 
 def main():
     password = get_password()
-# asterisks_password(password)
+    asterisks_password(password)
+
+
+def asterisks_password(password):
+    print(len(password) * "*")
 
 
 def get_password():
