@@ -6,10 +6,10 @@ Broken program to determine score status
 
 def main():
     score = float(input("Enter score: "))
-    grade = score_calculation(score)
+    grade = determine_grade(score)
 
 
-def score_calculation(score):
+def determine_grade(score):
     if score < 0 or score > 100:
         return "Invalid Score"
     elif score >= 90:

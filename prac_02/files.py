@@ -1,9 +1,10 @@
 out_file = open("data.txt", 'w')
 name = input("Please enter your name: ")
 print(name, file=out_file)
-
-print("Your name is {:}".format(name))
 out_file.close()
+
+name_file = open("data.txt", 'r')
+print("Your name is {:}".format(name_file.read().strip()))
 
 numbers = open("numbers.txt", 'r')
 number_1 = int(numbers.readline())
