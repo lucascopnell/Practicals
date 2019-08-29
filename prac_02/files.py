@@ -4,7 +4,9 @@ print(name, file=out_file)
 out_file.close()
 
 name_file = open("data.txt", 'r')
-print("Your name is {:}".format(name_file.read().strip()))
+name = name_file.read().strip()
+name_file.close()
+print("Your name is ", name)
 
 numbers = open("numbers.txt", 'r')
 number_1 = int(numbers.readline())
