@@ -10,7 +10,6 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
 
 for state in STATE_NAMES:
     print("{:3} is {}".format(state, STATE_NAMES[state]))
-    
 
 state = input("Enter short state: ").upper()
 while state != "":
