@@ -9,6 +9,11 @@ for word in sentence:
         count_words[word] += 1
     else:
         count_words[word] = 1
+
+word_key = list(count_words.keys())
+word_key.sort()
+max_word_length = max((len(word)) for word in sentence)
+
 for word in count_words:
-    print("{:<{}}: {}".format(word, length, count_words[word]))
+    print("{:<{}}: {}".format(word, max_word_length, count_words[word]))
 

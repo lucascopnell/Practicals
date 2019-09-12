@@ -2,7 +2,6 @@ HEX_COLOURS = {"beige": "#f5f5dc", "bisque3": "#cdb79e", "black": "#000000", "br
                "cadetblue": "#5f9ea0", "chartreuse1": "#7fff00", "coral": "#ff7f50", "cornflowerblue": "#6495ed", "cyan3": "#00cdcd" }
 
 
-
 colour = input("Enter colour name: ").lower()
 while colour != "":
     if colour in HEX_COLOURS:
