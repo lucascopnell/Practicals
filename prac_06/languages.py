@@ -12,5 +12,5 @@ print("\n The dynamic typed languages are: ")
 dynamic_languages = [language.name for language in languages if language.is_dynamic()]
 for i in dynamic_languages:
     print(i)
-    
+
 
